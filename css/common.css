@@ -1,0 +1,76 @@
+body{
+    font-size : 16px;
+}
+nav{
+    position: fixed;
+    top : 0px;
+}
+nav .brand-logo{
+    font-family: 'Press Start 2P', cursive;
+    font-size : 120%;
+    padding : 0 20px;
+    color : #fff;
+}
+ul.sidenav li a, nav ul li a{
+    letter-spacing: 1px;
+    font-size : 100%;
+}
+nav ul li.active{
+    background-color : #e95a00;
+}
+.btn{
+    margin: 5px 5px 9px 5px;
+    font-size : 100%;   
+}
+
+
+@keyframes updown
+{
+    0% {transform: translateY(-3%)}
+    50% {transform: translateY(3%)}
+    100% {transform: translateY(-3%)}
+}
+
+.btn.btn-filled{
+    background-color : #e95a00;
+    color : white;
+    animation-name: updown;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.btn.btn-filled:hover{
+    background-color:#c74d00;
+}
+
+.btn.btn-transparent{
+    background-color : transparent;
+    border : 1px solid #e95a00;
+    color : #e95a00;
+}
+.btn.btn-transparent:hover{
+    border : 1px solid #fff;
+    color : #fff;
+}
+
+footer
+{
+    position : fixed;
+    bottom  : 0px;
+    background-color : rgba(62, 62, 62, 0.37);
+    color : white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height : 50px;
+    width : 100%;
+    font-size : 90%;
+}
+        
+header{
+    height : 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(3, 3, 3, 0.96)), url('../images/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+}

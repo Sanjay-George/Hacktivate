@@ -1,0 +1,94 @@
+header .header-holder h1{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    top : 50%;
+    transform: translateY(-60%);
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color : white;
+    font-size : 320%;
+/*    margin-top: 200px;*/
+    margin-bottom: 50px;
+}
+.subline{
+    text-align: center;
+}
+.subline p
+{
+    font-size : 130%;
+    color: #bebebe;
+    font-family: 'PT Mono', monospace;
+
+}
+.link-holder{
+/*    margin-top : 30px;*/
+/*    flex-wrap: no*/
+    text-align: center;
+}
+
+.btn{
+    margin: 5px 5px 9px 5px;
+    font-size : 100%;   
+}
+
+
+
+@keyframes updown
+{
+    0% {transform: translateY(-3%)}
+    50% {transform: translateY(3%)}
+    100% {transform: translateY(-3%)}
+}
+
+.btn.btn-filled{
+    background-color : #e95a00;
+    color : white;
+    animation-name: updown;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.btn.btn-filled:hover{
+    background-color:#c74d00;
+}
+
+.btn.btn-transparent{
+    background-color : transparent;
+    border : 1px solid #e95a00;
+    color : #e95a00;
+}
+.btn.btn-transparent:hover{
+    border : 1px solid #fff;
+    color : #fff;
+}
+
+
+footer{
+    background-color : rgba(62, 62, 62, 0.21);
+}
+
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size : 14px;
+  }
+}
+
+@media screen and (max-width : 450px)
+{
+    body{
+        font-size : 15px;
+    }
+    h1{
+        font-size : 220%;
+    }
+    .subline p{
+        font-size : 110%;
+    }
+}

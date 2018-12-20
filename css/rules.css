@@ -1,0 +1,65 @@
+header{
+    height : 100%;
+}
+.container{
+    background : rgba(255, 255, 255, 0.92);
+    height: 100%;
+}
+
+.content{
+    padding-top : 100px;
+    padding-left: 50px;
+    padding-right : 50px;
+    font-size : 105%;
+}
+ol>li{
+    padding: 10px 5px;
+}
+.content ul{
+    list-style-type: disc;
+}
+.content ul>li{
+    list-style-type: disc;
+}
+
+.link-holder{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.link-holder .btn.btn-filled{
+    width : 250px;
+    animation: none;
+    background-color: #151515;
+}
+
+footer{
+    position: static;
+    background-color : rgba(47, 47, 47, 0.88);
+
+}
+
+
+@media screen and (max-width: 700px) {
+      body {
+        font-size : 15px;
+      }
+     .content{
+        padding-left : 10px;
+        padding-right : 10px;
+    }
+}
+
+@media screen and (max-width : 450px)
+{
+    body{
+        font-size : 15px;
+    }
+    .content{
+        padding-left : 0px;
+        padding-right : 6px;
+    }
+    ol>li{
+        padding: 5px 0px 5px 2px;
+    }
+   
+}
